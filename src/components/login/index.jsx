@@ -12,7 +12,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://happypetbackend.spwork.xyz/login', {
+      const response = await fetch('https://happyback.spwork.xyz/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
