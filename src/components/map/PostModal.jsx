@@ -44,7 +44,7 @@ function PostModal({ onClose, post }) {
   const handleSubmit = async () => {
     // 유효성 검사: 필수 필드 확인
     if (!formData.username || !formData.pn || !formData.descriptionI) {
-      alert('모든 필수 필드를 입력해주세요.');
+      alert('필수 필드를 입력해주세요.');
       return;
     }
 
@@ -65,7 +65,7 @@ function PostModal({ onClose, post }) {
           ...formData,
           userid,
         });
-        alert('예약이 성공적으로 완료되었습니다.');
+        alert('예약이 완료되었습니다.');
       }
       onClose(); // 모달 닫기
       window.location.reload(); // 페이지 새로고침

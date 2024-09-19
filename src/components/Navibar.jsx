@@ -7,7 +7,7 @@ const Navibar = () => {
       <div className="logoAndHome flex items-center text-cyan-700 ">
         <Link to="/" className="font-Kr flex justify-center items-center  ">
           <img src={PetLogo} alt="" className=" w-[25%] h-[25%]" />
-          <span className=" font-bold text-green-600">펫</span>
+          <span className=" font-bold text-green-600">HAPPY PET</span>
         </Link>
       </div>
 

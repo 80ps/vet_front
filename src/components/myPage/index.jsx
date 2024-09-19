@@ -75,11 +75,11 @@ const MyPage = ({ onLogout }) => {
         {/* 나의 예약 카드 */}
         <Link
           to="/reservation"
-          className="flex flex-col p-8 bg-[#f1f3ea] rounded-lg shadow-lg hover:shadow-2xl transition-shadow w-80 h-48"
+          className="flex flex-col p-8 bg-[#f1f3ea] rounded-lg shadow-lg hover:shadow-2xl transition-shadow w-300 h-48"
         >
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold">나의 예약</h2>
-            <BsCalendarCheck className="w-12 h-12" />
+            <BsCalendarCheck className="w-11 h-11" />
           </div>
           <div className="mt-4">
             {reservations.length > 0 ? (
