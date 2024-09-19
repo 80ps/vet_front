@@ -14,7 +14,7 @@ function ReservationList() {
     const getReservationList = async () => {
       try {
         const resp = await axios.get(
-          `https://happypetbackend.spwork.xyz/get_reserv/${userid}`
+          `https://happyback.spwork.xyz/get_reserv/${userid}`
         );
         setReservationList(resp.data);
       } catch (error) {
@@ -30,7 +30,7 @@ function ReservationList() {
     if (confirmDeletion) {
       try {
         await axios.delete(
-          `https://happypetbackend.spwork.xyz/delete_reserv/${reservation.reserv_idx}`
+          `https://happyback.spwork.xyz/delete_reserv/${reservation.reserv_idx}`
         );
         alert('삭제되었습니다.');
         setReservationList((prevList) =>

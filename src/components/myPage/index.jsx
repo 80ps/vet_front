@@ -23,10 +23,10 @@ const MyPage = ({ onLogout }) => {
       try {
         // API 호출로 예약 데이터와 문의 데이터를 가져옵니다.
         const [reservationsResponse, inquiriesResponse] = await Promise.all([
-          axios.get(`https://happypetbackend.spwork.xyz/get_reserv/${userid}`, {
+          axios.get(`https://happyback.spwork.xyz/get_reserv/${userid}`, {
             headers: { Authorization: `Bearer ${token}` },
           }),
-          axios.get(`https://happypetbackend.spwork.xyz/get_inq/${userid}`, {
+          axios.get(`https://happyback.spwork.xyz/get_inq/${userid}`, {
             headers: { Authorization: `Bearer ${token}` },
           }),
         ]);
@@ -49,15 +49,12 @@ const MyPage = ({ onLogout }) => {
       const userid = localStorage.getItem('userid');
 
       try {
-        await axios.delete(
-          `https://happypetbackend.spwork.xyz/delete_account/`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-            data: { userid },
-          }
-        );
+        await axios.delete(`https://happyback.spwork.xyz/delete_account/`, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          data: { userid },
+        });
 
         // 로그아웃 처리
         if (onLogout) {
