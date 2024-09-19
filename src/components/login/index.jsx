@@ -33,7 +33,7 @@ const Login = ({ onLogin }) => {
         setErrorMessage(data.message); // 오류 메시지 설정
       }
     } catch (error) {
-      setErrorMessage('로그인에 실패하였습니다. 다 시도해 주세요');
+      setErrorMessage('로그인에 실패하였습니다. 다시 시도해 주세요');
     }
   };
 
