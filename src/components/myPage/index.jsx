@@ -89,10 +89,10 @@ const MyPage = ({ onLogout }) => {
                 <p className="font-medium font-Kr">예약 내역 보기</p>{' '}
                 {/* Display this only once */}
                 <ul>
-                  {inquiries.map((inquiry, index) => (
+                  {reservations.map((reservation, index) => (
                     <li key={index} className="mb-2">
                       <a
-                        href={`/inquiries/${inquiry.id}`}
+                        href={`/reservation/${reservation.id}`}
                         className="text-blue-500 underline"
                       ></a>
                     </li>
@@ -125,7 +125,7 @@ const MyPage = ({ onLogout }) => {
                   {inquiries.map((inquiry, index) => (
                     <li key={index} className="mb-2">
                       <a
-                        href={`/inquiries/${inquiry.id}`}
+                        href={`/inquiry/${inquiry.id}`}
                         className="text-blue-500 underline"
                       ></a>
                     </li>
