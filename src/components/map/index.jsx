@@ -234,7 +234,7 @@ function Map() {
       setSelectedHospital(hospital);
       setIsModalOpenR(true);
     } else {
-      alert('로그인');
+      alert('로그인이 필요한 서비스 입니다.');
     }
   };
 
@@ -243,7 +243,7 @@ function Map() {
       setSelectedHospital(hospital);
       setIsModalOpenI(true);
     } else {
-      alert('로그인');
+      alert('로그인이 필요한 서비스 입니다.');
     }
   };
 
