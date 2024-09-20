@@ -61,7 +61,10 @@ const MyPage = ({ onLogout }) => {
           onLogout(); // 로그아웃 함수 호출
         }
       } catch (error) {
-        console.error('회원 탈퇴 처리에 실패했습니다:', error);
+        console.error(
+          '회원 탈퇴 처리에 실패했습니다: 다시 시도해 주세요.',
+          error
+        );
       }
     }
   };
@@ -104,7 +107,7 @@ const MyPage = ({ onLogout }) => {
             )}
           </div>
         </Link>
-        \{/* 1:1 문의 카드 */}
+        {/* 1:1 문의 카드 */}
         <Link
           to="/inquiry"
           className="flex flex-col p-8 bg-[#f1f3ea] rounded-lg shadow-lg hover:shadow-2xl transition-shadow w-300 h-48"
