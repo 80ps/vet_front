@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function PostModal({ onClose, post, hospitalPn, hospitalName }) {
+function PostModal({ onClose, post, hospitalPN, hospitalName }) {
   const [formData, setFormData] = useState({
     username: '',
     pn: '',
     descriptionI: '',
     hosp_name: hospitalName,
-    hosp_pn: hospitalPn,
+    hosp_pn: hospitalPN,
   });
   const [userid, setUserid] = useState(null);
   const [isEdit, setIsEdit] = useState(false); // 수정 여부
