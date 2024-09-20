@@ -73,6 +73,7 @@ function PostList() {
               </div>
             </div>
             <p className="text-gray-700  overflow-y-auto w-[300px] h-10 justify-start ">
+              <span calssName="text-gray-700 px-3"> 문의 내용: </span>
               {post.descriptioni}
             </p>
 

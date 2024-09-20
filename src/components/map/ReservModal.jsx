@@ -73,7 +73,7 @@ function ReservModal({ onClose, reservation, hospitalName, hospitalPn }) {
       window.location.reload(); // 페이지 새로고침
     } catch (error) {
       console.error('예약 실패:', error);
-      alert('예약 중 오류가 발생했습니다.');
+      alert('다시 시도해 주세요.');
     }
   };
 
