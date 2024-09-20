@@ -5,7 +5,7 @@
 
 
 ## 목차
-- [프로젝트 구조](#프로젝트-front-end-구조-정리)
+- [프로젝트 구조](#front-end-파일-구조-정리)
 - [설치 방법](#설치방법)
 - [사용법](#사용법)
 - [주요 기능](#주요기능)
@@ -14,7 +14,7 @@
 
 
 
-## 프로젝트 front-end 구조 정리
+## front-end 파일 구조 정리
 <img width="424" alt="image" src="https://github.com/user-attachments/assets/628df57f-a370-4c2f-b85b-165fdf86d320">
 
 ## 설치방법
