@@ -12,7 +12,7 @@ WORKDIR /app
 COPY package.json .
 
 
-RUN node --max-old-space-size=4096 $(which npm) install
+RUN node --max-old-space-size=8192 $(which npm) install
 
 
 
