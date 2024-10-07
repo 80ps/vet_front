@@ -43,7 +43,7 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 
 # Copy the Nginx configuration file
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+# COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
 # nginx 포트 설정
 EXPOSE 80
