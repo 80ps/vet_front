@@ -8,7 +8,7 @@ const About = () => {
       <PageTitle title="About" className="px-7" />
       <div className="bg-white w-full rounded-lg shadow-lg">
         <div className="flex flex-col items-center bg-[#f1f3ea] py-10 px-6 md:px-10 rounded-lg h-full font-Kr text-center">
-          {/* 타이틀 및 주요 내용 */}
+          {/* 타이틀 및 주요 내용을 ... */}
           <h2 className="text-start font-En font-bold text-2xl md:text-4xl py-4 md:py-6">
             <FaPaw className="inline-block text-green-600 mr-2" /> About
             HappyPet
